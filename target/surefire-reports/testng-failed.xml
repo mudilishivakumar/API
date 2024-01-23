@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AccountRestAPISuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.accountapi.utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="accountRestAPITest(failed)" verbose="0">
+    <classes>
+      <class name="com.accountapi.testCases.TC003_Post_Account_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResposeBody"/>
+          <include name="checkstatusLine"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+          <include name="createAccount"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC003_Post_Account_Record -->
+    </classes>
+  </test> <!-- accountRestAPITest(failed) -->
+</suite> <!-- Failed suite [AccountRestAPISuite] -->

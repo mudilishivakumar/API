@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.accountapi.testCases.TC005_Delete_Account_Record">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="checkstatusLine"/>
+          <include name="checkResposeBody"/>
+          <include name="checkcontentEncoding"/>
+          <include name="checkserverType"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="deleteAccount"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC005_Delete_Account_Record -->
+      <class name="com.accountapi.testCases.TC004_Put_Account_Record">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="updateEmployee"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="checkResposeBody"/>
+          <include name="checkstatusLine"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC004_Put_Account_Record -->
+      <class name="com.accountapi.testCases.TC003_Post_Account_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkResposeBody"/>
+          <include name="checkstatusLine"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+          <include name="createAccount"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC003_Post_Account_Record -->
+      <class name="com.accountapi.testCases.TC002_Get_Single_Account_Record">
+        <methods>
+          <include name="checkStatusCode"/>
+          <include name="checkResposeBody"/>
+          <include name="checkContentLenght"/>
+          <include name="checkContentType"/>
+          <include name="checkResponseTime"/>
+          <include name="setup"/>
+          <include name="checkserverType"/>
+          <include name="checkstatusLine"/>
+          <include name="getAccountData"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC002_Get_Single_Account_Record -->
+      <class name="com.accountapi.testCases.TC001_Get_All_Accounts">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getAllAccounts"/>
+          <include name="checkContentLenght"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.accountapi.testCases.TC001_Get_All_Accounts -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
